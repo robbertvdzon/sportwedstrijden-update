@@ -12,6 +12,7 @@ touch lastversion
 echo `curl -s -X GET $APPLICATION_VERSION_FILE` > newversion
 diff lastversion newversion
 comp_value=$?
+cp newversion lastversion
 if [ $comp_value -eq 1 ]
 then
 	logger "Update for  $APPLICATION_NAME found! Restarting application"
@@ -26,4 +27,3 @@ then
 else 	
 	logger "No update for $APPLICATION_NAME found"
 fi
-cp newversion lastversion
