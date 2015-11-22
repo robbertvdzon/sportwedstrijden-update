@@ -15,7 +15,7 @@ comp_value=$?
 cp newversion lastversion
 if [ $comp_value -eq 1 ]
 then
-	logger "Update for  $APPLICATION_NAME found! Restarting application"
+	echo "Update for  $APPLICATION_NAME found! Restarting application"
 	cd /workspace/sportwedstrijden-deployment
 	docker-compose stop
 	cd /workspace/
@@ -25,5 +25,5 @@ then
 	chmod a+x *.sh
 	./download_and_start.sh
 else 	
-	logger "No update for $APPLICATION_NAME found"
+	echo "No update for $APPLICATION_NAME found"
 fi
