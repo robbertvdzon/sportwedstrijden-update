@@ -3,6 +3,7 @@
 export APPLICATION_VERSION_FILE="http://www.vdzon.com/_jar/msw-portlet-version.php"
 export APPLICATION_NAME="Mijnsportwedstrijden"
 
+cd /workspace/sportwedstrijden-update/deploy
 
 # log all output to syyslog
 exec 1> >(logger -s -t $(basename $0)) 2>&1

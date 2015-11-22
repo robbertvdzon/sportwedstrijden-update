@@ -3,6 +3,7 @@
 export GIT_REPO="https://github.com/robbertvdzon/sportwedstrijden.git"
 export APPLICATION_NAME="Mijnsportwedstrijden"
 
+cd /workspace/sportwedstrijden-update/pipeline
 
 # log all output to syyslog
 exec 1> >(logger -s -t $(basename $0)) 2>&1
