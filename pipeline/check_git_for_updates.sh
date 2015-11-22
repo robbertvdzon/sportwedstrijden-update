@@ -14,7 +14,7 @@ comp_value=$?
 if [ $comp_value -eq 1 ]
 then
 	echo "Git update for $APPLICATION_NAME found, starting pipeline"
-	./jenkinsdroplet_create.sh
+	/workspace/sportwedstrijden-update/pipeline/jenkinsdroplet_create.sh
 else 	
 	echo "No git update for $APPLICATION_NAME found"
 fi

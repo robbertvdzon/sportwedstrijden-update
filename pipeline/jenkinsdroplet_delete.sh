@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export API_KEY=`cat digitalocean-api-key`
-export API_KEY="e14af6b844bd7c65da3f151b3bbb447031b575c25b11bb6d07508b0eb7075e35"
 export DROPLET_NAME="mijnsportwedstrijden.pipeline"
 
 # log all output to syyslog
