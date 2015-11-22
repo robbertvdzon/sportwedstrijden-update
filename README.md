@@ -17,4 +17,9 @@ this key must be placed in the file pipeline/digitalocean-api-key
 echo YOUR_API_KEY > /workspace/sportwedstrijden-update/pipeline/digitalocean-api-key
 ```
 
+if jq is not installed, then that must be installed as well:
+```
+apt-get install jq
+```
+
 The update scripts are run every minute and log their output at /var/log/syslog
