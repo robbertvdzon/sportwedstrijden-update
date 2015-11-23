@@ -18,7 +18,8 @@ if [ $comp_value -eq 1 ]
 then
 	echo "Update for  $APPLICATION_NAME found! Restarting application"
 	cd /workspace/sportwedstrijden-deployment
-	docker-compose stop
+	/usr/local/bin/docker-compose stop
+	/usr/local/bin/docker-compose kill
 	cd /workspace/
 	rm -rf /workspace/sportwedstrijden-deployment
 	git clone https://github.com/robbertvdzon/sportwedstrijden-deployment.git
