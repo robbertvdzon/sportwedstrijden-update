@@ -24,4 +24,5 @@ echo "Snapshot found under ID:$SNAPSHOT_ID"
 
 
 # create droplet
-curl -s -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer '$API_KEY'' -d '{  "name": "'$DROPLET_NAME'",  "region": "ams3",  "size": "512mb",  "image": "'$SNAPSHOT_ID'",  "ssh_keys": null,  "backups": false,  "ipv6": true,  "user_data": null,  "private_networking": null}' "https://api.digitalocean.com/v2/droplets" | jq '.'
+curl -s -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer '$API_KEY'' -d '{  "name": "'$DROPLET_NAME'",  "region": "ams3",  "size": "2gb",  "image": "'$SNAPSHOT_ID'",  "ssh_keys": null,  "backups": false,  "ipv6": true,  "user_data": null,  "private_networking": null}' "https://api.digitalocean.com/v2/droplets" | jq '.'
+#curl -s -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer '$API_KEY'' -d '{  "name": "'$DROPLET_NAME'",  "region": "ams3",  "size": "512mb",  "image": "'$SNAPSHOT_ID'",  "ssh_keys": null,  "backups": false,  "ipv6": true,  "user_data": null,  "private_networking": null}' "https://api.digitalocean.com/v2/droplets" | jq '.'
