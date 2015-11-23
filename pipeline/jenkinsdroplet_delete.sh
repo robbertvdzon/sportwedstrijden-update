@@ -1,7 +1,8 @@
 #!/bin/bash
-
-export API_KEY=`cat digitalocean-api-key`
+export DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export API_KEY=`cat $DIR/digitalocean-api-key`
 export DROPLET_NAME="mijnsportwedstrijden.pipeline"
+
 
 # log all output to syyslog
 exec 1> >(logger -s -t $(basename $0)) 2>&1
