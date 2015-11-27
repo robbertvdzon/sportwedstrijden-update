@@ -20,6 +20,7 @@ then
 	cd /workspace/sportwedstrijden-deployment
 	/usr/local/bin/docker-compose stop
 	/usr/local/bin/docker-compose kill
+	/usr/local/bin/docker-compose rm --force
 	cd /workspace/
 	rm -rf /workspace/sportwedstrijden-deployment
 	git clone https://github.com/robbertvdzon/sportwedstrijden-deployment.git
