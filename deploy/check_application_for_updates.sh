@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export APPLICATION_VERSION_FILE="http://www.vdzon.com/_jar/msw-portlet-version.php"
+export APPLICATION_VERSION_FILE="http://www.vdzon.com/_jar/download.php?file=lastversion.txt"
 export APPLICATION_NAME="Mijnsportwedstrijden"
 
 cd /workspace/sportwedstrijden-update/deploy
