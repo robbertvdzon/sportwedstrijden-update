@@ -24,6 +24,8 @@ then
 	cd /workspace/
 	rm -rf /workspace/sportwedstrijden-deployment
 	git clone https://github.com/robbertvdzon/sportwedstrijden-deployment.git
+	cp /workspace/sportwedstrijden-configuratie/files/digital-ocean/digitalocean-api-key /workspace/sportwedstrijden-update/pipeline/
+	cp /workspace/sportwedstrijden-configuratie/files/msw-database/application.properties /workspace/sportwedstrijden-deployment/data/importmswservice_data/application.properties
 	cd /workspace/sportwedstrijden-deployment
 	chmod a+x *.sh
 	./download_and_start.sh
